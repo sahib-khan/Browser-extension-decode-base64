@@ -1,5 +1,5 @@
 {
-    "name":"Deoder",
+    "name":"Decoder",
     "description":"An Extension to decode any selected Base64 text",
     "version":"1.0",
     "manifest_version": 2 ,
