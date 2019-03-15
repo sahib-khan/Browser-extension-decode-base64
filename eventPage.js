@@ -29,6 +29,8 @@ chrome.contextMenus.onClicked.addListener(function(clickData){
         }
         console.log(decodedString);
         copyStringToClipboard(decodedString);
+        decodedString= "https://"+decodedString;
+        chrome.tabs.create({ url: decodedString });
     }
     
 })

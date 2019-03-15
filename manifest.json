@@ -21,5 +21,5 @@
         "scripts":["eventPage.js"],
         "persistent":false
     },
-    "permissions":["storage","contextMenus","clipboardWrite"]
+    "permissions":["storage","contextMenus","clipboardWrite","tabs"]
 }
