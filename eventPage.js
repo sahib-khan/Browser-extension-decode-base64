@@ -1,9 +1,13 @@
 var contextMenuItem = {
-    "id":"selected_link",
-    "title":"Decode Link",
+    "id":"selected_text",
+    "title":"Decode Text",
     "contexts":["selection"]
 };
-chrome.contextMenus.create(contextMenuItem);
+
+chrome.runtime.onInstalled.addListener(function() {
+    chrome.contextMenus.create(contextMenuItem);  
+  });
+
 function copyStringToClipboard (string) {
     function handler (event){
         event.clipboardData.setData('text/plain', string);
@@ -16,7 +20,7 @@ function copyStringToClipboard (string) {
 }
 chrome.contextMenus.onClicked.addListener(function(clickData){
     var decodedString ="";
-    if (clickData.menuItemId == "selected_link" && clickData.selectionText){ 
+    if (clickData.menuItemId == "selected_text" && clickData.selectionText){ 
         try{       
             decodedString = window.atob(clickData.selectionText);
         }
