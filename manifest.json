@@ -1,7 +1,7 @@
 {
     "name":"Decoder",
     "description":"An Extension to decode any selected Base64 text",
-    "version":"1.2",
+    "version":"1.3",
     "manifest_version": 2 ,
     "browser_action":{
         "default_icon": {
@@ -11,6 +11,7 @@
             "128": "images/Decoder_128.png"
           }   
     },
+    
     "icons":{
         "16": "images/Decoder_16.png",
         "32": "images/Decoder_32.png",
